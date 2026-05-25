@@ -13,7 +13,10 @@ import java.util.List;
 
 @RestController
 public class ApiController {
-
+ @GetMapping("/")
+public String home() {
+    return "Hospital Management API is Live!";
+}
     @GetMapping("/api/test")
     public String testApi() {
         return "API Connected Successfully";
