@@ -8,9 +8,9 @@ public class DatabaseConnection {
     public static Connection getConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/hospital_db",
+                    "jdbc:mysql://zephyr.proxy.rlwy.net:27197/railway",
                     "root",
-                    "123456789"
+                    "oYDbmIFdVWnhPYLroWPTNVeLHlyhJSkJ"
             );
         } catch (Exception e) {
             e.printStackTrace();
